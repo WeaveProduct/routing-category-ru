@@ -1,0 +1,13 @@
+# Операторы связи: сайты, личные кабинеты и приложения.
+# Свой список WeaveVPN (в v2fly такой категории нет).
+
+include:megafon
+include:mts-ru
+include:rostelecom
+include:t2-ru
+
+# Билайн
+beeline.ru
+
+# Дом.ру (ЭР-Телеком)
+dom.ru
