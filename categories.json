@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "categories": [
+    {
+      "id": "ru-banks",
+      "title": "Банки и платежи",
+      "description": "Сбер, Т-Банк, ВТБ, Альфа-Банк, Газпромбанк, СБП, Mir Pay и другие",
+      "geosite": ["category-bank-ru"],
+      "android": [
+        "ru.sberbankmobile",
+        "com.idamob.tinkoff.android",
+        "ru.vtb24.mobilebanking.android",
+        "ru.alfabank.mobile.android",
+        "ru.gazprombank.android.mobilebank.app",
+        "ru.raiffeisennews",
+        "ru.sovcomcard.halva.v1",
+        "logo.com.mbanking",
+        "ru.rshb.dbo",
+        "ru.otpbank.mobile",
+        "ru.lewis.dbo",
+        "ru.ozon.fintech.finance",
+        "com.yandex.bank",
+        "ru.yoo.money",
+        "ru.nspk.mirpay",
+        "ru.nspk.sbpay"
+      ]
+    },
+    {
+      "id": "ru-gov",
+      "title": "Госуслуги и госсервисы",
+      "description": "Госуслуги, налоговая, mos.ru и другие государственные сайты",
+      "geosite": ["category-gov-ru"],
+      "android": [
+        "ru.rostel",
+        "ru.gosuslugi.auto",
+        "ru.fns.lkfl",
+        "com.gnivts.selfemployed"
+      ]
+    },
+    {
+      "id": "ru-shops",
+      "title": "Маркетплейсы и магазины",
+      "description": "Ozon, Wildberries, Авито, Циан, DNS, М.Видео, Магнит, Пятёрочка и другие",
+      "geosite": ["category-ecommerce-ru", "category-retail-ru"]
+    },
+    {
+      "id": "ru-video",
+      "title": "Кино и видео",
+      "description": "Кинопоиск, Okko, Wink, Иви, Premier, START, Rutube и другие",
+      "geosite": ["category-entertainment-ru"]
+    },
+    {
+      "id": "ru-yandex",
+      "title": "Яндекс",
+      "description": "Все сервисы Яндекса",
+      "geosite": ["yandex"]
+    },
+    {
+      "id": "ru-vk",
+      "title": "VK, Одноклассники, Mail.ru",
+      "description": "ВКонтакте, Одноклассники, Mail.ru, Дзен и другие сервисы VK",
+      "geosite": ["mailru-group"]
+    },
+    {
+      "id": "ru-telecom",
+      "title": "Операторы связи",
+      "description": "МТС, МегаФон, Билайн, Т2, Ростелеком, Дом.ру",
+      "geosite": ["category-telecom-ru"]
+    },
+    {
+      "id": "ru-travel",
+      "title": "Транспорт и путешествия",
+      "description": "РЖД, Туту, Авиасейлс, Островок, метро, 2ГИС",
+      "geosite": ["category-travel-ru"]
+    },
+    {
+      "id": "ru-sites",
+      "title": "Все российские сайты",
+      "description": "Сайты в зонах .ru, .su, .рф и российские сервисы на других доменах",
+      "geosite": ["category-ru"]
+    },
+    {
+      "id": "ru-ip",
+      "title": "Российские IP-адреса",
+      "description": "Все адреса, зарегистрированные в России (данные RIPE NCC)",
+      "geoip": ["ru"]
+    }
+  ]
+}

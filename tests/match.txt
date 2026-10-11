@@ -1,0 +1,63 @@
+# Проверки сборки: «<домен или IP> <категория или список>».
+# «!» перед именем — НЕ должен попадать. Имя — id из categories.json или имя списка (category-bank-ru, ru).
+# Сборка прогоняет каждую строку через `sing-box rule-set match`; если хоть одна не сошлась, ничего не публикуется.
+
+# Банки и платежи
+sberbank.ru               ru-banks
+online.sberbank.ru        ru-banks
+tbank.ru                  ru-banks
+vtb.ru                    ru-banks
+alfabank.ru               ru-banks
+nspk.ru                   ru-banks
+notsberbank.ru            !ru-banks
+
+# Госсервисы
+gosuslugi.ru              ru-gov
+www.nalog.gov.ru          ru-gov
+mos.ru                    ru-gov
+
+# Магазины
+ozon.ru                   ru-shops
+wildberries.ru            ru-shops
+avito.ru                  ru-shops
+dns-shop.ru               ru-shops
+5ka.ru                    ru-shops
+
+# Кино и видео
+kinopoisk.ru              ru-video
+ivi.ru                    ru-video
+rutube.ru                 ru-video
+
+# Яндекс и VK
+ya.ru                     ru-yandex
+yastatic.net              ru-yandex
+vk.com                    ru-vk
+userapi.com               ru-vk
+ok.ru                     ru-vk
+mail.ru                   ru-vk
+dzen.ru                   ru-vk
+
+# Связь, транспорт
+mts.ru                    ru-telecom
+megafon.ru                ru-telecom
+beeline.ru                ru-telecom
+dom.ru                    ru-telecom
+rzd.ru                    ru-travel
+tutu.ru                   ru-travel
+
+# Все российские сайты: зоны .ru/.su/.рф и российские сервисы на других доменах
+lenta.ru                  ru-sites
+xn--d1acpjx3f.xn--p1ai    ru-sites      # яндекс.рф
+vk.com                    ru-sites
+yastatic.net              ru-sites
+google.com                !ru-sites
+youtube.com               !ru-sites
+github.com                !ru-sites
+ru.wikipedia.org          !ru-sites
+
+# Российские IP-адреса
+77.88.8.8                 ru-ip         # Яндекс DNS
+2a02:6b8::1               ru-ip         # Яндекс, IPv6
+8.8.8.8                   !ru-ip
+1.1.1.1                   !ru-ip
+2001:4860:4860::8888      !ru-ip

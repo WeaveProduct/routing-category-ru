@@ -1,0 +1,68 @@
+name: Сборка
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "17 4 * * *"  # каждый день: RIPE обновляет статистику адресов раз в сутки
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-${{ github.ref }}
+
+env:
+  SING_BOX_VERSION: "1.14.2"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: sing-box
+        run: |
+          curl -fsSL "https://github.com/SagerNet/sing-box/releases/download/v${SING_BOX_VERSION}/sing-box-${SING_BOX_VERSION}-linux-amd64.tar.gz" | tar -xz
+          echo "$PWD/sing-box-${SING_BOX_VERSION}-linux-amd64" >> "$GITHUB_PATH"
+
+      - name: Сборка и проверки
+        run: python3 scripts/build.py --out build
+
+      # Дальше — только для main: pull request просто проверяется.
+      - name: Изменилось ли что-нибудь
+        id: diff
+        if: github.event_name != 'pull_request'
+        run: |
+          if git fetch -q --depth=1 origin release 2>/dev/null &&
+             git show FETCH_HEAD:index.json > old-index.json 2>/dev/null &&
+             [ "$(jq -S '{categories, rule_sets}' old-index.json)" = "$(jq -S '{categories, rule_sets}' build/index.json)" ]; then
+            echo "Списки не изменились — публиковать нечего"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Ветка release — всегда один коммит с последней сборкой, чтобы история не разрасталась.
+      - name: Ветка release
+        if: steps.diff.outputs.changed == 'true'
+        working-directory: build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git init -q -b release
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -q -m "Сборка $(jq -r .version index.json)"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" release
+
+      - name: GitHub Release
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version=$(jq -r .version build/index.json)
+          gh release create "$version" build/index.json build/*.srs --title "$version" \
+            --notes "Автоматическая сборка. Статистика RIPE NCC от $(jq -r .sources.ripe build/index.json)."
