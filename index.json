@@ -1,0 +1,684 @@
+{
+  "schema": 1,
+  "version": "20261016045238",
+  "updated": "2026-10-16T04:52:38Z",
+  "sources": {
+    "ripe": "20261015"
+  },
+  "categories": [
+    {
+      "id": "ru-banks",
+      "title": "Банки и платежи",
+      "description": "Сбер, Т-Банк, ВТБ, Альфа-Банк, Газпромбанк, СБП, Mir Pay и другие",
+      "rule_sets": [
+        "geosite-category-bank-ru"
+      ],
+      "android": [
+        "ru.sberbankmobile",
+        "com.idamob.tinkoff.android",
+        "ru.vtb24.mobilebanking.android",
+        "ru.alfabank.mobile.android",
+        "ru.gazprombank.android.mobilebank.app",
+        "ru.raiffeisennews",
+        "ru.sovcomcard.halva.v1",
+        "logo.com.mbanking",
+        "ru.rshb.dbo",
+        "ru.otpbank.mobile",
+        "ru.lewis.dbo",
+        "ru.ozon.fintech.finance",
+        "com.yandex.bank",
+        "ru.yoo.money",
+        "ru.nspk.mirpay",
+        "ru.nspk.sbpay"
+      ]
+    },
+    {
+      "id": "ru-gov",
+      "title": "Госуслуги и госсервисы",
+      "description": "Госуслуги, налоговая, mos.ru и другие государственные сайты",
+      "rule_sets": [
+        "geosite-category-gov-ru"
+      ],
+      "android": [
+        "ru.rostel",
+        "ru.gosuslugi.auto",
+        "ru.fns.lkfl",
+        "com.gnivts.selfemployed"
+      ]
+    },
+    {
+      "id": "ru-shops",
+      "title": "Маркетплейсы и магазины",
+      "description": "Ozon, Wildberries, Авито, Циан, DNS, М.Видео, Магнит, Пятёрочка и другие",
+      "rule_sets": [
+        "geosite-category-ecommerce-ru",
+        "geosite-category-retail-ru"
+      ]
+    },
+    {
+      "id": "ru-video",
+      "title": "Кино и видео",
+      "description": "Кинопоиск, Okko, Wink, Иви, Premier, START, Rutube и другие",
+      "rule_sets": [
+        "geosite-category-entertainment-ru"
+      ]
+    },
+    {
+      "id": "ru-yandex",
+      "title": "Яндекс",
+      "description": "Все сервисы Яндекса",
+      "rule_sets": [
+        "geosite-yandex"
+      ]
+    },
+    {
+      "id": "ru-vk",
+      "title": "VK, Одноклассники, Mail.ru",
+      "description": "ВКонтакте, Одноклассники, Mail.ru, Дзен и другие сервисы VK",
+      "rule_sets": [
+        "geosite-mailru-group"
+      ]
+    },
+    {
+      "id": "ru-telecom",
+      "title": "Операторы связи",
+      "description": "МТС, МегаФон, Билайн, Т2, Ростелеком, Дом.ру",
+      "rule_sets": [
+        "geosite-category-telecom-ru"
+      ]
+    },
+    {
+      "id": "ru-travel",
+      "title": "Транспорт и путешествия",
+      "description": "РЖД, Туту, Авиасейлс, Островок, метро, 2ГИС",
+      "rule_sets": [
+        "geosite-category-travel-ru"
+      ]
+    },
+    {
+      "id": "ru-sites",
+      "title": "Все российские сайты",
+      "description": "Сайты в зонах .ru, .su, .рф и российские сервисы на других доменах",
+      "rule_sets": [
+        "geosite-category-ru"
+      ]
+    },
+    {
+      "id": "ru-ip",
+      "title": "Российские IP-адреса",
+      "description": "Все адреса, зарегистрированные в России (данные RIPE NCC)",
+      "rule_sets": [
+        "geoip-ru"
+      ]
+    }
+  ],
+  "rule_sets": {
+    "geoip-ru": {
+      "type": "ip",
+      "path": "geoip-ru.srs",
+      "sha256": "3f142cf761893ac6cdb4deba43c6b7bea92d78c3681e86438b6244ceaea32ba9",
+      "size": 50058,
+      "rules": 10831
+    },
+    "geosite-autoru": {
+      "type": "domain",
+      "path": "geosite-autoru.srs",
+      "sha256": "a0c9878da2a21c63f6f9b0ecf79ae345a8efde9e7396cd685fc1ac282c3f6863",
+      "size": 80,
+      "rules": 5
+    },
+    "geosite-aviasales": {
+      "type": "domain",
+      "path": "geosite-aviasales.srs",
+      "sha256": "69227825abde1fbb5d357b10018417a988e795e1e38aec0fcb06f410818ef9a7",
+      "size": 79,
+      "rules": 3
+    },
+    "geosite-avito": {
+      "type": "domain",
+      "path": "geosite-avito.srs",
+      "sha256": "3cce899ce378e59d7484ea73c2824a2a4d1425b141a89c2971ecb88ab6f83468",
+      "size": 53,
+      "rules": 2
+    },
+    "geosite-beget": {
+      "type": "domain",
+      "path": "geosite-beget.srs",
+      "sha256": "533382516b669f150ef9c2c3e0bad5f8c27acfe124ec39693f04ba47336835f2",
+      "size": 54,
+      "rules": 2
+    },
+    "geosite-betboom": {
+      "type": "domain",
+      "path": "geosite-betboom.srs",
+      "sha256": "d94b2f1475073f35f4ed80406f1b172bff2d1d4c1fbe7139815b6aceddfecce2",
+      "size": 66,
+      "rules": 2
+    },
+    "geosite-carrotquest": {
+      "type": "domain",
+      "path": "geosite-carrotquest.srs",
+      "sha256": "e5a9a1c58db73fa14b65cccc5ef4178ff6f1c3c1e7916e7372eeedcbd0590510",
+      "size": 169,
+      "rules": 12
+    },
+    "geosite-category-ai-ru": {
+      "type": "domain",
+      "path": "geosite-category-ai-ru.srs",
+      "sha256": "551a3e253acffca79817f596dcf4c7a4268f8c28f1b05c3b8414becde36fbaeb",
+      "size": 166,
+      "rules": 12
+    },
+    "geosite-category-bank-ru": {
+      "type": "domain",
+      "path": "geosite-category-bank-ru.srs",
+      "sha256": "f3d04b70b6b1120c9f32104faa17fee7984a25be581616e07bf8fefc831e8e88",
+      "size": 2428,
+      "rules": 351
+    },
+    "geosite-category-betting-ru": {
+      "type": "domain",
+      "path": "geosite-category-betting-ru.srs",
+      "sha256": "97c9a6b5c0d3405d840056956dabe09270b24cb726c4ec2a3d0bd513529be4ce",
+      "size": 200,
+      "rules": 13
+    },
+    "geosite-category-ecommerce-ru": {
+      "type": "domain",
+      "path": "geosite-category-ecommerce-ru.srs",
+      "sha256": "2b732f34a917c222bf7632420a2ebda656eb7dffa1c0a499bfb322213e51ab14",
+      "size": 1335,
+      "rules": 165
+    },
+    "geosite-category-education-ru": {
+      "type": "domain",
+      "path": "geosite-category-education-ru.srs",
+      "sha256": "53b98c0201556195984c333324a3dec62acd0e1d2cb640a07795010cd8b06030",
+      "size": 269,
+      "rules": 19
+    },
+    "geosite-category-entertainment-ru": {
+      "type": "domain",
+      "path": "geosite-category-entertainment-ru.srs",
+      "sha256": "be27e6998feaff3b756a7b39898cedda2f9959cba9a12f444a12b2cd7260c7b3",
+      "size": 331,
+      "rules": 31
+    },
+    "geosite-category-forums-ru": {
+      "type": "domain",
+      "path": "geosite-category-forums-ru.srs",
+      "sha256": "607bcb0d1b3906cb0976397e3415c6a6bde0a86ed7af4e79154a5d4f5ec53c7d",
+      "size": 135,
+      "rules": 10
+    },
+    "geosite-category-gov-ru": {
+      "type": "domain",
+      "path": "geosite-category-gov-ru.srs",
+      "sha256": "2d3bfaba12bc46118464dc936ca3ad0358ee45e581a2e68ebf3c1e4fbf78b433",
+      "size": 939,
+      "rules": 142
+    },
+    "geosite-category-media-ru": {
+      "type": "domain",
+      "path": "geosite-category-media-ru.srs",
+      "sha256": "2e219c34f7e09a9fe1f11d99cc2409635fccbfbe703ba579f87f6014c4fd8eac",
+      "size": 1201,
+      "rules": 141
+    },
+    "geosite-category-medicine-ru": {
+      "type": "domain",
+      "path": "geosite-category-medicine-ru.srs",
+      "sha256": "9cc00e463e809cf1fe406b4df7d3d3b43b49af3f67a7623b1246a34b8e03f97e",
+      "size": 347,
+      "rules": 34
+    },
+    "geosite-category-retail-ru": {
+      "type": "domain",
+      "path": "geosite-category-retail-ru.srs",
+      "sha256": "b7fd9769e7a7bc35438c7c9de954c8aa1b54732a82e05fb368221e74ddee01e0",
+      "size": 635,
+      "rules": 79
+    },
+    "geosite-category-ru": {
+      "type": "domain",
+      "path": "geosite-category-ru.srs",
+      "sha256": "dec86b1477902fafcc6e66b316c21f0fcbf1e520cbdfa3300db2b2222a82aca2",
+      "size": 6003,
+      "rules": 799
+    },
+    "geosite-category-tech-media-ru": {
+      "type": "domain",
+      "path": "geosite-category-tech-media-ru.srs",
+      "sha256": "5fa9c7ced9451d603ef7a592dd67e0be9f2560b9e63ccda525464a13227fa982",
+      "size": 393,
+      "rules": 34
+    },
+    "geosite-category-telecom-ru": {
+      "type": "domain",
+      "path": "geosite-category-telecom-ru.srs",
+      "sha256": "fbc226d70b3bbf1b01df3e6d67d9e18b42c1581d7939501aa76ce8a21bc89add",
+      "size": 356,
+      "rules": 35
+    },
+    "geosite-category-travel-ru": {
+      "type": "domain",
+      "path": "geosite-category-travel-ru.srs",
+      "sha256": "12e0c06ed451ea63b907d448898b80dd5a6294e0b26c77208d89d81f399d1794",
+      "size": 277,
+      "rules": 25
+    },
+    "geosite-cdek": {
+      "type": "domain",
+      "path": "geosite-cdek.srs",
+      "sha256": "010c8c3e3b7c7f6cdf458b1bbb3b318923041fbdf07623ee21479fbc28d61994",
+      "size": 67,
+      "rules": 3
+    },
+    "geosite-cian": {
+      "type": "domain",
+      "path": "geosite-cian.srs",
+      "sha256": "932453bc2d74c34b53a6f8e6caefb4af7e9c43715c98c4299055442364da8584",
+      "size": 150,
+      "rules": 7
+    },
+    "geosite-comssone": {
+      "type": "domain",
+      "path": "geosite-comssone.srs",
+      "sha256": "479525e996a8498ca9d9394f66ac822474a41864478cf19d2f7eba6389f5f1dc",
+      "size": 123,
+      "rules": 9
+    },
+    "geosite-drweb": {
+      "type": "domain",
+      "path": "geosite-drweb.srs",
+      "sha256": "3fb102abac91f969f06e651398e5a4c5c5b5bb3e647af70a65c2921148ea4bc2",
+      "size": 151,
+      "rules": 12
+    },
+    "geosite-dzen": {
+      "type": "domain",
+      "path": "geosite-dzen.srs",
+      "sha256": "1bcd06e5535cda1e90f9843da82e85d1a8334faada716bd60cbb84ee1754b122",
+      "size": 54,
+      "rules": 2
+    },
+    "geosite-envybox": {
+      "type": "domain",
+      "path": "geosite-envybox.srs",
+      "sha256": "96aca5e986e8b6aa6e34bcb303dc06bb24845d801fe0fb125cdc1352c9cdf062",
+      "size": 273,
+      "rules": 21
+    },
+    "geosite-flowwow": {
+      "type": "domain",
+      "path": "geosite-flowwow.srs",
+      "sha256": "2d0fe7133d338e62643e2a94b2fddb95a5525a7c11aa82ac598acc5269425c99",
+      "size": 68,
+      "rules": 2
+    },
+    "geosite-fonbet": {
+      "type": "domain",
+      "path": "geosite-fonbet.srs",
+      "sha256": "8ba3aec44964af4053e09e672a8be5dfa207855e316f0a0f4dffb7861c5e167a",
+      "size": 101,
+      "rules": 4
+    },
+    "geosite-funpay": {
+      "type": "domain",
+      "path": "geosite-funpay.srs",
+      "sha256": "1b10d38261f34e39494a645c56d740b3e7d0bd3bedb76d831c75a62d06ef0295",
+      "size": 60,
+      "rules": 3
+    },
+    "geosite-genotek-ru": {
+      "type": "domain",
+      "path": "geosite-genotek-ru.srs",
+      "sha256": "218bb204de57b3b679b6cc067ab7bec56a3c6bffcf234992c3307fe6477a4728",
+      "size": 141,
+      "rules": 9
+    },
+    "geosite-gismeteo": {
+      "type": "domain",
+      "path": "geosite-gismeteo.srs",
+      "sha256": "a12af853e73a9611b29b53c5149ab87e64e064fb2209363a86ac2054e1678ead",
+      "size": 106,
+      "rules": 7
+    },
+    "geosite-group-ib": {
+      "type": "domain",
+      "path": "geosite-group-ib.srs",
+      "sha256": "fecf5c9c6bde93b478aea650d4bfab3181bd91455b4723da05cc90879d66956c",
+      "size": 315,
+      "rules": 30
+    },
+    "geosite-headhunter": {
+      "type": "domain",
+      "path": "geosite-headhunter.srs",
+      "sha256": "aedf5330fa54237f273f7205cf9cfb235cdaa7673e32f5e083e7a9bb3dc75459",
+      "size": 104,
+      "rules": 8
+    },
+    "geosite-ideco-ru": {
+      "type": "domain",
+      "path": "geosite-ideco-ru.srs",
+      "sha256": "c40b80baa318373ae75adbfca7e9ec197cba3044b07ee62e536677f3b98d11f4",
+      "size": 79,
+      "rules": 3
+    },
+    "geosite-ixbt": {
+      "type": "domain",
+      "path": "geosite-ixbt.srs",
+      "sha256": "4c11f8c9d350dbf9832582447aa6edc8135bbac51b47eae56cbe497fa2a40ee5",
+      "size": 125,
+      "rules": 9
+    },
+    "geosite-kaspersky": {
+      "type": "domain",
+      "path": "geosite-kaspersky.srs",
+      "sha256": "e8150e6068c9c842d4b29e863b77256e9d1853a5cea9b74b3f85882b313ea918",
+      "size": 332,
+      "rules": 36
+    },
+    "geosite-kinopoisk": {
+      "type": "domain",
+      "path": "geosite-kinopoisk.srs",
+      "sha256": "79c0f8fa138610e73d54f0cde81dda7ee9e84f07cf4ef354a3f3aae03826a347",
+      "size": 84,
+      "rules": 2
+    },
+    "geosite-kontur": {
+      "type": "domain",
+      "path": "geosite-kontur.srs",
+      "sha256": "5b142a6427ca23bf6591798e8addcf37387624be7f9b88929d357a96980348d9",
+      "size": 80,
+      "rules": 3
+    },
+    "geosite-ligastavok": {
+      "type": "domain",
+      "path": "geosite-ligastavok.srs",
+      "sha256": "c993ab893a56c108abc15e96e321681a622977d78ecf8650000fa3c56a034542",
+      "size": 100,
+      "rules": 4
+    },
+    "geosite-magnit": {
+      "type": "domain",
+      "path": "geosite-magnit.srs",
+      "sha256": "976c53538d1b147cf97dbe995109027c6c31991db66917e2600e4e7898cb7e47",
+      "size": 83,
+      "rules": 4
+    },
+    "geosite-mailru-group": {
+      "type": "domain",
+      "path": "geosite-mailru-group.srs",
+      "sha256": "13638330a428d0a692c0f15412ec1cadf7cfc72135ec6e992e89b731626e536e",
+      "size": 1909,
+      "rules": 234
+    },
+    "geosite-megafon": {
+      "type": "domain",
+      "path": "geosite-megafon.srs",
+      "sha256": "a2bba4bc5c659d039eb998bb64b88a8f1d368c9e9ed03d2ebd71df933ced1d78",
+      "size": 170,
+      "rules": 12
+    },
+    "geosite-mindbox": {
+      "type": "domain",
+      "path": "geosite-mindbox.srs",
+      "sha256": "b3f9e4bea9dc941b838b881b7ba9b66b5f57888e10ef967d80415d8839fc480a",
+      "size": 186,
+      "rules": 12
+    },
+    "geosite-mosmetro": {
+      "type": "domain",
+      "path": "geosite-mosmetro.srs",
+      "sha256": "6035aa358ea41f31b98592cfc601c6db64580f369f42ec42dc9b8ab8909c43a8",
+      "size": 65,
+      "rules": 2
+    },
+    "geosite-mts-ru": {
+      "type": "domain",
+      "path": "geosite-mts-ru.srs",
+      "sha256": "8c0127f9d683f7246e332013735e5e8b94b60639455114381f22c72dcbd2615b",
+      "size": 134,
+      "rules": 10
+    },
+    "geosite-mvideo": {
+      "type": "domain",
+      "path": "geosite-mvideo.srs",
+      "sha256": "1f4f8bd5d3d5dfd790287a72fecf42d512fa82989bf63c4e7461e5d52938ab6f",
+      "size": 77,
+      "rules": 3
+    },
+    "geosite-myoffice-ru": {
+      "type": "domain",
+      "path": "geosite-myoffice-ru.srs",
+      "sha256": "84a3c25be66b921b026859f3af27f4753d4d3f946d6dabd855e58a0b6680f807",
+      "size": 65,
+      "rules": 2
+    },
+    "geosite-netcraze": {
+      "type": "domain",
+      "path": "geosite-netcraze.srs",
+      "sha256": "20b10b77c41084dabe491fd9aa1cf5e4df8d80229770cffb578d8d4eeae9a769",
+      "size": 101,
+      "rules": 5
+    },
+    "geosite-nic-ru": {
+      "type": "domain",
+      "path": "geosite-nic-ru.srs",
+      "sha256": "6697d4d48041a0e3f5337145292c90ba8cef3c8c27fd14263f9f46f10b16805e",
+      "size": 65,
+      "rules": 4
+    },
+    "geosite-ok": {
+      "type": "domain",
+      "path": "geosite-ok.srs",
+      "sha256": "534d9c60da6da3fb28a95a09995656b3fc75d66d2baebc93c94d64089f57f624",
+      "size": 242,
+      "rules": 19
+    },
+    "geosite-okko": {
+      "type": "domain",
+      "path": "geosite-okko.srs",
+      "sha256": "7ac34087a38f1c55036246b3482578513f05033c7a1abef7a65ae572a504842d",
+      "size": 88,
+      "rules": 4
+    },
+    "geosite-oskelly": {
+      "type": "domain",
+      "path": "geosite-oskelly.srs",
+      "sha256": "20dc3ba2d1efd68f7959588d163bf57690b51c07d23d4c6a3c5c16dcb1aa1b69",
+      "size": 58,
+      "rules": 2
+    },
+    "geosite-overclockers-ru": {
+      "type": "domain",
+      "path": "geosite-overclockers-ru.srs",
+      "sha256": "f6f6d143754817e70461d2d310b2683bffb4475c0c440f3b11bfd6434cc9e5a7",
+      "size": 207,
+      "rules": 12
+    },
+    "geosite-ozon": {
+      "type": "domain",
+      "path": "geosite-ozon.srs",
+      "sha256": "a28e39e71aced6ecb7d309342652927d644b1b6a3a31b488274931de7b83c9ff",
+      "size": 495,
+      "rules": 45
+    },
+    "geosite-positive-technologies": {
+      "type": "domain",
+      "path": "geosite-positive-technologies.srs",
+      "sha256": "57e9393659966ef0d3d6ab7b9ed5ce38669367ca3fc8b2242863c809275e32fe",
+      "size": 81,
+      "rules": 3
+    },
+    "geosite-regru": {
+      "type": "domain",
+      "path": "geosite-regru.srs",
+      "sha256": "f2812b52d1c044f7fc68f4057d061643e5af3c02b952e37870f96a755b530397",
+      "size": 67,
+      "rules": 3
+    },
+    "geosite-rossiyasegodnya": {
+      "type": "domain",
+      "path": "geosite-rossiyasegodnya.srs",
+      "sha256": "34bca9dbe70b166210703aeca98b39df9e15f8713de6053687b8a241930127b0",
+      "size": 254,
+      "rules": 17
+    },
+    "geosite-rostelecom": {
+      "type": "domain",
+      "path": "geosite-rostelecom.srs",
+      "sha256": "ab3a2a430e5142e861d3a23e6de4c3d5862d5f6af5940b4aaba528543c4c891e",
+      "size": 127,
+      "rules": 8
+    },
+    "geosite-rt": {
+      "type": "domain",
+      "path": "geosite-rt.srs",
+      "sha256": "c96783b1c010b2b62ee238453ee91217e40b3a9ccc8227bd701bc4c80f1cf11c",
+      "size": 963,
+      "rules": 112
+    },
+    "geosite-rutube": {
+      "type": "domain",
+      "path": "geosite-rutube.srs",
+      "sha256": "3bf221fafc477014d17c0820ad0dc99fe771313e1a7a50af4bce8c3d5bce3b0a",
+      "size": 85,
+      "rules": 4
+    },
+    "geosite-sberbank": {
+      "type": "domain",
+      "path": "geosite-sberbank.srs",
+      "sha256": "6a42fe68521dd69ce4e3cfd8725cd674ccb999dfd9a91c0afeff42d221c3b064",
+      "size": 198,
+      "rules": 15
+    },
+    "geosite-selectel": {
+      "type": "domain",
+      "path": "geosite-selectel.srs",
+      "sha256": "6e34302f916f56ff69a0b4329a06c206d6f121424e301f615ad623df471fe7e4",
+      "size": 268,
+      "rules": 24
+    },
+    "geosite-servicepipe": {
+      "type": "domain",
+      "path": "geosite-servicepipe.srs",
+      "sha256": "433f57e99eb44fe8168b1fe88634969c9539335274fd5505de40829a68c1d80e",
+      "size": 73,
+      "rules": 2
+    },
+    "geosite-skyeng": {
+      "type": "domain",
+      "path": "geosite-skyeng.srs",
+      "sha256": "0e1273369936f6b1ced9e03b0058d4703c845168326907cdebda959dcc6999db",
+      "size": 54,
+      "rules": 2
+    },
+    "geosite-smena": {
+      "type": "domain",
+      "path": "geosite-smena.srs",
+      "sha256": "c793764789637ac4f35cdbd891a73bc4e724c362f26bc15bb81976d374aa610c",
+      "size": 44,
+      "rules": 1
+    },
+    "geosite-sokolov": {
+      "type": "domain",
+      "path": "geosite-sokolov.srs",
+      "sha256": "bf713116f7885fffb36226f9eeb49b48b7f16077dec3b67e8815c2aeec30476e",
+      "size": 58,
+      "rules": 2
+    },
+    "geosite-t2-ru": {
+      "type": "domain",
+      "path": "geosite-t2-ru.srs",
+      "sha256": "b35565e200976c03bdcf495b7a35af1530b95f2f99e723c02610bdfa22da480c",
+      "size": 59,
+      "rules": 3
+    },
+    "geosite-tbank-ru": {
+      "type": "domain",
+      "path": "geosite-tbank-ru.srs",
+      "sha256": "22e5552ef1cd22e628f4b14011911987d9c9186fc922688bdef5b95174cd016e",
+      "size": 1085,
+      "rules": 110
+    },
+    "geosite-tilda": {
+      "type": "domain",
+      "path": "geosite-tilda.srs",
+      "sha256": "0e67b262aa18f3dd9d24f316533239978944b8d3fe3934c717bee3052d387298",
+      "size": 105,
+      "rules": 6
+    },
+    "geosite-timeweb": {
+      "type": "domain",
+      "path": "geosite-timeweb.srs",
+      "sha256": "75049799358c2c90f713e6e85ab1df20ba4638b03fa0be25aae085f81c3197e1",
+      "size": 83,
+      "rules": 3
+    },
+    "geosite-tld-ru": {
+      "type": "domain",
+      "path": "geosite-tld-ru.srs",
+      "sha256": "021b27dbc131d9966d1df5153668bd8fa839e6a7442f9bade192764140c4d123",
+      "size": 142,
+      "rules": 11
+    },
+    "geosite-ucoz": {
+      "type": "domain",
+      "path": "geosite-ucoz.srs",
+      "sha256": "800f84da64341432656cd91209a4ea3e0cff088a7b95ea596567ba0cffe0f3d1",
+      "size": 324,
+      "rules": 37
+    },
+    "geosite-vk": {
+      "type": "domain",
+      "path": "geosite-vk.srs",
+      "sha256": "721d43d1eb1e5a1671715e782f83d6542039ec165220559825ef1760c745f8ae",
+      "size": 369,
+      "rules": 38
+    },
+    "geosite-whoosh": {
+      "type": "domain",
+      "path": "geosite-whoosh.srs",
+      "sha256": "7965c31530fd7e040faa88d884abdca3d02da03c81678f2587f18d94f3f12402",
+      "size": 68,
+      "rules": 2
+    },
+    "geosite-wildberries": {
+      "type": "domain",
+      "path": "geosite-wildberries.srs",
+      "sha256": "666de258711d426b72661a7aad6eb156644b48bcf2c1fd9993288c7032e121d8",
+      "size": 785,
+      "rules": 99
+    },
+    "geosite-wink": {
+      "type": "domain",
+      "path": "geosite-wink.srs",
+      "sha256": "ad361241b52dc8641846273050174541b56fb109a7b76d9d2a561bdfa2653eb8",
+      "size": 99,
+      "rules": 5
+    },
+    "geosite-winline": {
+      "type": "domain",
+      "path": "geosite-winline.srs",
+      "sha256": "dac741a72efa597f97869379fd27a630e9943a0987a10998ab9f20d956ff2b60",
+      "size": 69,
+      "rules": 3
+    },
+    "geosite-x5": {
+      "type": "domain",
+      "path": "geosite-x5.srs",
+      "sha256": "caa7368de457a9816b38c5234cdf590d386bf5736d2d27269ba536d96d66249d",
+      "size": 303,
+      "rules": 32
+    },
+    "geosite-yandex": {
+      "type": "domain",
+      "path": "geosite-yandex.srs",
+      "sha256": "778e85e0a48195509ff9e17c04821a8a68857e2420ba9a7d02a336e301e82a78",
+      "size": 1070,
+      "rules": 121
+    }
+  }
+}
