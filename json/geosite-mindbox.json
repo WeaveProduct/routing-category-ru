@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "mindbox.cloud",
+        "mindbox.group",
+        "botmechanic.io",
+        "popmechanic.io",
+        "ceosummit.ru",
+        "mind-box.ru",
+        "mindbox.ru",
+        "mindbox-notifications.ru",
+        "popmechanic.ru",
+        "summitceo.ru",
+        "mindbox.site",
+        "mindbox.so"
+      ]
+    }
+  ]
+}

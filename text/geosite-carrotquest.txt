@@ -1,0 +1,12 @@
+carrotquest.app
+carrottrack.app
+dashly.app
+dashlytrack.app
+dashly.help
+carrot-mail.io
+carrotquest.io
+carrotquest-mail.io
+dashly.io
+mail-carrotquest.io
+pushgrow.io
+dashly.me
