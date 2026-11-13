@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "poudobnee.com",
+        "cian.ru",
+        "ciangroup.ru",
+        "dmir.ru",
+        "cian.site",
+        "xn--80aaafbpzn5blfby1p.xn--p1ai",
+        "xn--80aaeib8abrryx4k.xn--p1ai"
+      ]
+    }
+  ]
+}

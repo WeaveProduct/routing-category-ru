@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "fon.bet",
+        "bk6bba-resources.com",
+        "fon.promo",
+        "bk6bba-resources.ru"
+      ]
+    }
+  ]
+}

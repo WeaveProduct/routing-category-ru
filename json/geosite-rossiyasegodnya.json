@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "jinrieluosi.cn",
+        "baltnews.com",
+        "rossiyasegodnya.com",
+        "sputnikglobe.com",
+        "sputnikimages.com",
+        "sputnikmediabank.com",
+        "sputniknews.com",
+        "baltnews.lt",
+        "tok.media",
+        "1prime.ru",
+        "arctic.ru",
+        "inosmi.ru",
+        "pressria.ru",
+        "radiosputnik.ru",
+        "ria.ru",
+        "ukraina.ru",
+        "xn--c1acbl2abdlkab1og.xn--p1ai"
+      ]
+    }
+  ]
+}
