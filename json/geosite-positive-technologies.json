@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "ptsecurity.com",
+        "standoff365.com",
+        "ptcloud.ru"
+      ]
+    }
+  ]
+}

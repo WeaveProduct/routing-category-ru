@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "cm.expert",
+        "autoru.me",
+        "apiauto.ru",
+        "auto.ru",
+        "avto.ru"
+      ]
+    }
+  ]
+}

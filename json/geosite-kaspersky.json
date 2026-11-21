@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "kaspersky.com.au",
+        "kaspersky.be",
+        "kaspersky.com.br",
+        "kaspersky.ca",
+        "kaspersky.com.cn",
+        "kaspersky.com",
+        "kaspersky-labs.com",
+        "kaspersky.cz",
+        "kaspersky.de",
+        "kaspersky.dk",
+        "kaspersky.dz",
+        "kaspersky.es",
+        "kaspersky.fi",
+        "kaspersky.fr",
+        "kaspersky.gr",
+        "kaspersky.com.hk",
+        "kaspersky.co.in",
+        "kaspersky.it",
+        "kaspersky.co.jp",
+        "kaspersky.co.kr",
+        "kaspersky.kz",
+        "kaspersky.ma",
+        "kaspersky.my",
+        "kaspersky.nl",
+        "kaspersky.com.pl",
+        "kaspersky.pt",
+        "kaspersky.ro",
+        "kaspersky.rs",
+        "kaspersky.ru",
+        "kaspersky.se",
+        "kaspersky.co.th",
+        "kaspersky.com.tr",
+        "kaspersky.com.tw",
+        "kaspersky.co.uk",
+        "kaspersky.com.vn",
+        "kaspersky.co.za"
+      ]
+    }
+  ]
+}

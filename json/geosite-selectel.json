@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "selectel.academy",
+        "selectel.blog",
+        "vscale.blog",
+        "chipcore.com",
+        "haicomdc.com",
+        "selectel.com",
+        "servercore.com",
+        "tehnodom.com",
+        "selectel.dev",
+        "selectel.info",
+        "selectel.io",
+        "vscale.io",
+        "selectel.live",
+        "servercore.live",
+        "selcdn.net",
+        "chipcore.ru",
+        "haicomdc.ru",
+        "haicomgroup.ru",
+        "itirex.ru",
+        "selectel.ru",
+        "selectelix.ru",
+        "selectelpro.ru",
+        "vscale.ru",
+        "slc.tl"
+      ]
+    }
+  ]
+}

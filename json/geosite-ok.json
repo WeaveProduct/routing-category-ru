@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "st-ok.cdn-vk.ru",
+        "st-ok-pts.cdn-vk.ru"
+      ],
+      "domain_suffix": [
+        "odnoklassniki.am",
+        "odnoklasniki.by",
+        "odnoklassniki.by",
+        "odnoklassniki.co.ee",
+        "odnoklassniki.eu",
+        "okl.lt",
+        "odnoklassniki.lv",
+        "ok.me",
+        "apiok.ru",
+        "insideok.ru",
+        "odkl.ru",
+        "odnoklassniki.ru",
+        "ok.ru",
+        "okcdn.ru",
+        "oktech.ru",
+        "odnoklassniki.tj",
+        "odnoklasniki.ua"
+      ]
+    }
+  ]
+}

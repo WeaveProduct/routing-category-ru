@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "yaplakal.com",
+        "opennet.dev",
+        "dtf.ru",
+        "opennet.ru",
+        "pikabu.ru",
+        "prodota.ru",
+        "vc.ru",
+        "yap.ru",
+        "yapfiles.ru",
+        "tischenko.su"
+      ]
+    }
+  ]
+}
